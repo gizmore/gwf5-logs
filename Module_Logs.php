@@ -15,4 +15,8 @@ final class Module_Logs extends GWF_Module
 	public function cfgLogRotationMail() { return $this->getConfigValue('log_rotation_mail'); }
 	public function cfgLogRotation() { return $this->getConfigValue('log_rotation'); }
 	public function cfgLastRotation() { return $this->getConfigValue('last_log_rotation'); }
+	
+	public function renderAdminTabs() { return $this->templatePHP('admin_tabs.php'); }
+	
+	public function href_administrate_module() { return href('Logs', 'Overview'); }
 }
