@@ -12,7 +12,6 @@ final class Logs_Rotate extends GWF_MethodCronjob
 			$now = GWF_Time::getDate(mktime(0,0,0));
 			if ($last != $now)
 			{
-// 				var_dump($last, $now);
 				$this->logRotate();
 // 				$module->saveConfigValue('log_last_rotation', $now);
 			}
